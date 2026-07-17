@@ -1,80 +1,72 @@
-<!-- Substitua as orientações entre colchetes -->
 
-# [INSIRA O TÍTULO DO PROJETO]
+# Braço Hidráulico Automatizado
 
 > Projeto vinculado ao SINAES – Soluções Inclusivas para Necessidades de Aprendizagem Específicas.
 
 ## Apresentação
 
-[Contextualize brevemente o tema e a área de aprendizagem relacionada ao projeto.]
-[Descreva o problema, a dificuldade ou a barreira de aprendizagem identificada e explique suas possíveis consequências para os estudantes.]
-[Apresente brevemente o material didático ou protótipo proposto como resposta ao problema identificado.]
-[Justifique a relevância do desenvolvimento da proposta para a aprendizagem, a inclusão ou a prática pedagógica.]
+O estudo da Hidrostática e da Hidrodinâmica na física mecânica frequentemente esbarra na barreira da abstração teórica, pois conceitos fundamentais como o Princípio de Pascal, vazão e multiplicação de força são ensinados apenas por meio de equações estáticas no quadro, limitando a compreensão dos alunos sobre como a pressão do fluido se converte em trabalho mecânico real. Essa abordagem puramente teórica gera desinteresse e dificulta a visualização prática de sistemas hidráulicos industriais, limitando a capacidade dos estudantes de integrar conceitos de física com aplicações reais de automação. Como resposta a esse problema, propõe-se o desenvolvimento de um Braço Hidráulico Automatizado construído com peças modulares em impressão 3D e corte CNC, cujas articulações se movimentam por meio de seringas atuando como pistões, controladas pelo acionamento de mini bombas d'água gerenciadas por um microcontrolador ESP32. Essa solução é altamente relevante pois une a mecânica dos fluidos à engenharia mecatrônica e ao Desenho Universal para a Aprendizagem (DUA), permitindo que estudantes com diferentes perfis manipulem variáveis físicas tangíveis e observem em tempo real como o controle do fluxo de água se transforma imediatamente em movimento articulado, preciso e autônomo na bancada.
 
 ## Objetivo geral e objetivos específicos
 
 ### Objetivo geral
 
-[Informe, em uma frase, o principal resultado que o projeto pretende alcançar.]
+Desenvolver um protótipo funcional capaz de converter o fluxo de fluidos em movimentos articulados precisos para demonstrar empiricamente os princípios da hidrostática e da automação industrial na bancada.
 
 ### Objetivos específicos
 
-- [Indique uma ação necessária para alcançar o objetivo geral.]
-- [Indique outra ação necessária.]
-- [Indique como o material ou protótipo será testado, avaliado ou documentado.]
+Para alcançar esses objetivos, o projeto prevê o desenvolvimento do firmware no ESP32 focado no controle de velocidade e sentido de rotação das mini bombas d'água via PWM e pontes H, em paralelo ao design mecânico em CAD e fabricação da estrutura articulada por meio de impressão 3D e corte CNC para assegurar o acoplamento perfeito das seringas como pistões. O protótipo terá seu circuito de fluidos e a repetibilidade dos movimentos validados inicialmente em testes de bancada para garantir a precisão do sistema. Por fim, sua avaliação prática e documentação definitiva ocorrerão durante a feira de inovação IFTech, onde a interação direta de estudantes e visitantes com o dispositivo servirá como teste real de usabilidade da interface, robustez do hardware e eficácia pedagógica da automação.
 
 ## Público-alvo e possibilidades de aplicação
 
-- **Público-alvo:** [Informe quem poderá utilizar ou ser beneficiado pelo material.]
-- **Áreas ou componentes curriculares:** [Informe as áreas de aplicação.]
-- **Conteúdos favorecidos:** [Indique os conteúdos que poderão ser explorados.]
-- **Possibilidades de aplicação:** [Aulas, oficinas, eventos, laboratórios, formação docente etc.]
+- **Público-alvo:** alunos do ensino médio e superior.
+- **Áreas ou componentes curriculares:** Física e automação indústrial.]
+- **Conteúdos favorecidos:** Princípio de Pascal, pressão hidrostática, vazão volumétrica, mecânica dos fluidos, transmissão de torque, circuitos hidráulicos e sistemas de potência.
+- **Possibilidades de aplicação:** Aulas, oficinas, eventos e laboratórios.
 
 ## Resultados esperados
 
-- [Informe o material, modelo ou protótipo que se espera desenvolver.]
-- [Indique de que maneira ele poderá favorecer a aprendizagem.]
-- [Indique possibilidades de utilização, compartilhamento, adaptação ou replicação.]
+Espera-se desenvolver um protótipo funcional de um Braço Hidráulico Automatizado, construído com peças modulares em impressão 3D e corte CNC, integrado a um microcontrolador ESP32 com mini bombas d'água acionadas por pontes H e seringas operando como atuadores hidráulicos. Esse dispositivo favorecerá a aprendizagem ao materializar as leis da hidrostática e da hidrodinâmica em movimento físico real, permitindo que os estudantes visualizem a conversão de pressão e vazão em trabalho mecânico, consolidando a transição de conceitos abstratos de fluidos para dados empíricos tangíveis de forma multissensorial e intuitiva. Além disso, após sua validação e apresentação pública na **IX IFTECH**, o projeto possui alto potencial de replicação e compartilhamento, pois todo o código-fonte, esquemáticos eletrônicos e arquivos de modelagem digital serão disponibilizados de forma *open-source*, funcionando como um kit didático de baixo custo que pode ser facilmente adaptado, expandido ou reproduzido por outros laboratórios de ensino e estudantes.
 
 ## Fundamentação e integração de conhecimentos
 
 ### Conhecimentos curriculares relacionados ao projeto
 
-[Apresente os principais conceitos da área ou do componente curricular relacionados ao problema de aprendizagem e ao funcionamento do material ou protótipo.]
+Princípio de Pascal e transmissão de pressão em fluidos confinados, pressão hidrostática, relação entre força e área em atuadores hidráulicos, vazão volumétrica e velocidade de escoamento, conservação da energia aplicada a sistemas hidráulicos (Equação de Bernoulli), torque e equilíbrio estático de corpos rígidos em braços articulados, cinemática de sistemas rotacionais e lógica de automação sequencial aplicada a microcontroladores.
 
 ### Conhecimentos pedagógicos e metodológicos
 
-- **O estudante poderá:** [observar, tocar, montar, testar, ouvir, movimentar etc.]
-- **O material ajuda a compreender:** [conteúdo ou conceito.]
-- **A dificuldade que procura reduzir é:** [dificuldade ou barreira.]
-- **O conteúdo será apresentado por meio de:** [texto, imagem, som, cor, relevo, objetos etc.]
-- **O estudante poderá demonstrar o que aprendeu por meio de:** [explicação, montagem, teste, desenho, apresentação etc.]
+- **O estudante poderá:** Movimentar as articulações do braço controlando o fluxo de água pelas bombas, tocar e manipular os componentes mecânicos tridimensionais, testar a garra e observar a resposta física imediata dos pistões de seringa à pressão exercida pelo fluido.
+- **O material ajuda a compreender:** O Princípio de Pascal, a transmissão de pressão hidrostática em um fluido confinado, a relação de multiplicação de força baseada na área dos pistões, o conceito de vazão volumétrica regulando a velocidade de movimento e a aplicação prática de circuitos hidráulicos acionados por automação eletrônica.
+- **A dificuldade que procura reduzir é:** A barreira de abstração de fórmulas estáticas da física de fluidos e a falta de percepção prática sobre como a energia hidráulica realiza trabalho mecânico, reduzindo o distanciamento entre a teoria matemática dos livros e a realidade operacional de sistemas automatizados e maquinários industriais.
+- **O conteúdo será apresentado por meio de:** Objetos físicos tridimensionais, o movimento visível do fluido (tingido) preenchendo as mangueiras e seringas, cores contrastantes para identificar os eixos de rotação e o estímulo tátil do controle direto das variáveis de fluxo.
+- **O estudante poderá demonstrar o que aprendeu por meio de:** Testes práticos repetíveis na bancada manipulando a carga de trabalho do braço, explicações lógicas da relação entre o tempo de acionamento das bombas e o deslocamento angular obtido, cálculos reais de pressão baseados na força exercida pela garra.
 
 ### Conhecimentos técnicos mobilizados
-<!-- Apague os itens que não forem aplicáveis ao projeto. -->
-[Identifique somente os conhecimentos técnicos efetivamente utilizados na elaboração da solução e explique a função de cada um.]
 
-- **Programação:** [Explique como foi utilizada.]
-- **Eletrônica:** [Explique como foi utilizada.]
-- **Robótica ou automação:** [Explique como foi utilizada.]
-- **Modelagem:** [Explique como foi utilizada.]
-- **Impressão 3D:** [Explique como foi utilizada.]
-- **Corte CNC:** [Explique como foi utilizado.]
-- **Outros:** [Informe e explique.]
+- **Programação:** Desenvolvimento do firmware no ESP32 focado na temporização precisa, gerenciando a velocidade e o tempo exato de acionamento de cada bomba para obter deslocamentos articulares coordenados.
+- **Eletrônica:** Dimensionamento e montagem dos circuitos de potência utilizando pontes H, para controlar as bombas d'água
+- **Automação:** trás técnologia indústrial para a sala de uma maneira fácil e compreensível.
+- **Modelagem:** Empregada no design mecânico tridimensional (CAD) do braço articulado, os eixos de rotação, os alojamentos sob medida para as seringas e as garras de fixação das mangueiras do circuito hidráulico.
+- **Impressão 3D:** Utilizada na manufatura aditiva das peças estruturais complexas previamente modeladas, os suportes dos pistões e seringas, garantindo leveza, encaixes precisos e flexibilidade para ajustes no design.
+- **Corte CNC:** Usinagem de alta precisão de placas planas de MDF para a base principal de sustentação da torre do braço e as partes do braço em si.
 
 
 ### Integração dos conhecimentos na solução
-[Explique como os conhecimentos curriculares, pedagógicos e técnicos foram articulados para transformar o problema de aprendizagem identificado em uma solução concreta.]
+
+A transformação da barreira de abstração da mecânica dos fluidos em uma solução concreta ocorreu pela articulação direta entre a física, a pedagogia e a engenharia mecatrônica. Os **conhecimentos curriculares** de hidrostática e hidrodinâmica definiram as diretrizes matemáticas do projeto, como a pressão necessária para mover os pistões de seringa e a vazão volumétrica das bombas para regular a velocidade do braço. Os **conhecimentos pedagógicos** baseados no DUA (Desenho Universal para a Aprendizagem) orientaram a criação de uma experiência totalmente interativa e tátil, substituindo equações teóricas abstratas pelo controle visível do fluxo de água que move a estrutura física, eliminando o desinteresse dos estudantes. Viabilizando essa proposta, os **conhecimentos técnicos** materializaram a solução: a **modelagem CAD** e o **corte CNC** estruturaram uma base estável para suportar o torque do sistema, a **impressão 3D** fabricou articulações sob medida, a **eletrônica** forneceu a potência necessária via pontes H para controlar as mini bombas d'água, e a **programação** no ESP32 unificou todo o conjunto por meio da **automação**, permitindo que o estudante controle e observe a transmissão de forças em tempo real na bancada.
 
 ### Diferentes formas de aprendizagem
 
-[Explique como o projeto contempla diferentes formas de representação, participação, interação ou expressão da aprendizagem.]
-- **Formas de representação:** [Como o conteúdo é apresentado visualmente, pelo tato, por áudio, por objetos, textos, símbolos etc.]
-- **Formas de participação e interação:** [Como o estudante manipula, explora, observa ou participa da atividade.]
-- **Formas de ação e expressão:** [Como o estudante poderá demonstrar o que compreendeu.]
+- **Formas de representação:** O conteúdo teórico de mecânica dos fluidos e automação deixa de ser puramente textual e simbólico para se manifestar de forma tridimensional e multissensorial. Os conceitos são apresentados visualmente pelo movimento macroscópico da água preenchendo as mangueiras e deslocando os êmbolos transparentes das seringas, de forma tátil pelas texturas diferenciadas das peças em impressão 3D e da base em MDF, e por meio de cores contrastantes que delimitam visualmente cada eixo de rotação e articulação do sistema.
+- **Formas de participação e interação:** O estudante interage diretamente com o protótipo operando potenciômetros de controle de fluxo, manipulando fisicamente as cargas que a garra deve erguer e modificando as trajetórias de movimentação. O aprendizado ocorre por meio da exploração ativa, onde o aluno observa na hora a relação de causa e efeito: ao acionar uma bomba específica, ele vê o fluido se deslocar, sente o torque gerado na estrutura e compreende empiricamente o Princípio de Pascal em funcionamento na bancada.
+- **Formas de ação e expressão:** Os estudantes possuem múltiplos caminhos para demonstrar o conhecimento adquirido, indo além das tradicionais avaliações escritas. Eles podem expressar o aprendizado programando uma nova sequência automatizada de movimentos no microcontrolador, realizando testes de bancada para medir o tempo que o fluido leva para deslocar a garra a uma determinada distância, explicando oralmente a física.
 
 ### Referências consultadas
-- [Informe livros, artigos, páginas institucionais, manuais técnicos ou outras fontes utilizadas.]
+
+HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. Fundamentos de Física, Volume 2: Gravitação, Ondas e Termodinâmica (inclui Mecânica dos Fluidos). 10. ed. Rio de Janeiro: LTC, 2016.
+
+ESPRESSIF SYSTEMS. ESP-IDF Programming Guide: Pulse Width Modulation (PWM) and MCPWM Drivers. Disponível em: https://docs.espressif.com/. Acesso em: abr. 2026.
 
 ## Percurso metodológico do projeto SINAES
 
@@ -101,70 +93,74 @@ A adoção desse percurso comum busca:
 
 | Etapa do PDP | Período planejado | Período realizado | Atividades desenvolvidas | Alterações, retornos ou sobreposições |
 |---|---|---|---|---|
-| Geração do conceito | [Data/período] | [Data/período] | [Atividades] | [Registre mudanças ou relação com outras etapas] |
-| Planejamento e especificação | [Data/período] | [Data/período] | [Atividades] | [Registre mudanças ou relação com outras etapas] |
-| Desenvolvimento incremental | [Data/período] | [Data/período] | [Atividades] | [Registre mudanças ou relação com outras etapas] |
-| Validação e aperfeiçoamento | [Data/período] | [Data/período] | [Atividades] | [Registre mudanças ou relação com outras etapas] |
+| Geração do conceito | novembro/2025| novembro/2025 | Conversa com professor de física | definir a ideia inicial |
+| Planejamento e especificação | maio/2026 | junho/2026 | desenvolvimento de esboços e reuniões com a equipe que está realizando o projeto | Definido que tipo de bomba d'água iria ser usado |
+| Desenvolvimento incremental | segundo semestre 2026 |  | montagem do protótipo |  |
+| Validação e aperfeiçoamento | segundo semestre 2026 |  | 	aperfeiçoamento do protótipo |  |
 
 ## Capacitações, tecnologias, materiais e orçamento
 
 | Capacitação | Finalidade no projeto | Período | Situação |
 |---|---|---|---|
-| [Capacitação] | [Por que foi necessária] | [mm/aaaa] | [Prevista / Em andamento / Concluída] |
-| [Capacitação] | [Por que foi necessária] | [mm/aaaa] | [Prevista / Em andamento / Concluída] |
+| Aulas ESP-IDF | Introduzir e ensinar os alunos a programar o ESP32 por meio do VS Code usando a ESP-IDF | abril,maio/2026 | Concluída |
+| Aula soldagem eletrônica | Ensinar a base da soldagem em componentes eletrônicos e placas de prototipação | junho/2026 | Concluída |
+| Aula Impressão 3D | Ensinar fatiamento e comandos básicos com impressora 3D | junho/2026 | Concluída |
+| Aula CNC | Ensinar a comandar e operar CNC | agosto/2026 | Prevista |
 
 ### Tecnologias, ferramentas e equipamentos
 
 | Tecnologia, ferramenta ou equipamento | Finalidade no projeto | Forma de acesso |
 |---|---|---|
-| [Software, impressora, máquina, instrumento etc.] | [Como será utilizado] | [Disponível no campus / Empréstimo / Aquisição / Outro] |
-| [Software, impressora, máquina, instrumento etc.] | [Como será utilizado] | [Forma de acesso] |
+| Impressora 3D | Impressão de partes do projeto | Disponível no campus |
+| Fusion360 | Modelar as peças para impressão 3D ou corte CNC | Disponível no campus |
+| CNC | Corte do MDF | Disponível no campus |
+| VS Code | Programar usando a ESP-IDF por meio dele | Disponível sem custo |
 
 ### Materiais e orçamento
 
-<!-- Preencha os valores somente quando houver necessidade de aquisição. -->
-
 | Material ou componente | Quantidade | Finalidade | Disponibilidade | Valor estimado |
 |---|---:|---|---|---:|
-| [Item] | [Quantidade] | [Como será utilizado] | [Disponível / Necessita aquisição] | R$ [valor] |
-| [Item] | [Quantidade] | [Como será utilizado] | [Disponível / Necessita aquisição] | R$ [valor] |
-| **Total estimado** |  |  |  | **R$ [total]** |
+| ESP32 | 1 | Controle das bombas d'água, execução do código, integração do circuito | Adquirido na 1ª edição do projeto | |
+| inserts de latão | 6 | possibilitar utilização de parafusos | Adquirido na 1ª edição do projeto |  |
+| parafusos | 6 | prender a estruturas de PLA na madeira | Adquirido na 1ª edição do projeto |  |
+| Filamento PLA | 300g | suportes para seringas, bombas e circuito | Adquirido na 1ª edição do projeto |  |
+| Ponte H | 4 | Controle das bombas d'água | Adquirido na 1ª edição do projeto |  |
+| Bomba d'água | 8 | Empurrar, mandar, ou puxar água das seringas | Adquirido na 1ª edição do projeto |  |
+| Seringa | 4 | Funcionar como pistão | Adquirido na 1ª edição do projeto |  |
+| Tubos de seringa | 2m | ligar seringas com bombas d'água | Adquirido na 1ª edição do projeto |  |
+| Chapa de MDF | 1 | para a base e estruturas | Adquirido na 1ª edição do projeto |  |
+| Potenciômetros | 4 | enviar sinais de controle, movimento | Adquirido na 1ª edição do projeto |  |
+| **Total estimado** |  |  |  |  |
 
 ## Artefatos do projeto
 
-[Relacione os arquivos, documentos e demais produtos gerados durante o desenvolvimento. Acrescente ou exclua linhas conforme necessário.]
-
 | Artefato | Descrição | Formato ou localização | Situação |
 |---|---|---|---|
-| Apresentação do projeto | [Breve descrição] | [`apresentacao/`](apresentacao/) | [Previsto / Em elaboração / Disponível] |
-| Documentação | [Relatórios, fichas técnicas ou orientações] | [`documentacao/`](documentacao/) | [Situação] |
-| Material didático | [Descrição do material] | [`materiais-didaticos/`](materiais-didaticos/) | [Situação] |
-| Código-fonte | [Descrição do código] | [`codigos/`](codigos/) | [Situação] |
-| Modelo 3D | [Descrição do modelo] | [`modelos-3d/`](modelos-3d/) | [Situação] |
-| Imagens | [Registros autorizados] | [`imagens/`](imagens/) | [Situação] |
-| Resultados | [Testes, avaliações ou evidências] | [`resultados/`](resultados/) | [Situação] |
-| Outros | [Descrição] | [Arquivo, pasta ou endereço] | [Situação] |
+| Apresentação do projeto | Braço Hidráulico Automatizado | [`apresentacao/`](apresentacao/) | Disponível |
+| Código-fonte | Código de controle das bombas a partir dos comandos | [`codigos/`](codigos/) | Em elaboração |
+| Modelo 3D | modelos de encaixes | [`modelos-3d/`](modelos-3d/) | Em elaboração |
+| Imagens | Fotos do projeto funcionando | [`imagens/`](imagens/) | Previsto |
+| Resultados | Exposição no IX IFTECH | [`resultados/`](resultados/) | Previsto |
 
 > [!NOTE]
-> **Possibilidades de replicação:** [Explique quais artefatos e orientações serão disponibilizados e como o material poderá ser reproduzido, utilizado ou adaptado por outras pessoas, escolas ou instituições. Indique também se a replicação exige equipamentos, materiais, conhecimentos técnicos ou condições específicas.]
-> **Créditos e licenças:** [Informe a autoria dos arquivos, modelos, códigos, imagens e materiais externos utilizados.]
+> **Possibilidades de replicação:** Ao término do projeto todos os materiais, modelos e códigos serão disponibilizados gratuitamente para replicação mediante a devida creditação, sem necessidade de licença ou autorização.
+> **Créditos:** Informe a autoria dos arquivos, modelos, códigos, imagens e materiais externos utilizados.
 
 ## Produções e participação em eventos
 
-- [Evento, publicação, apresentação ou produção relacionada]
+- Inscrição na XIV IFTECH Campus Paranavaí, em outubro de 2026.
  
 # Equipe
-[Apresente as pessoas e instituições envolvidas e descreva objetivamente a participação de cada uma. Acrescente ou exclua linhas conforme necessário.]
 
 | Categoria | Nome | Curso, setor ou instituição | Participação no projeto |
 |---|---|---|---|
-| Estudante | [Nome] | [Curso] | [Atividades e responsabilidades] |
-| Estudante | [Nome] | [Curso] | [Atividades e responsabilidades] |
-| Servidor | [Nome] | [Setor, área ou função institucional] | [Função no projeto] |
-| Servidor | [Nome] | [Setor, área ou função institucional] | [Função no projeto] |
-| Colaborador | [Nome] | [Instituição ou área de atuação] | [Forma de colaboração] |
-| Instituição parceira | [Nome da instituição] | [Município ou setor] | [Forma de participação no projeto] |
-
+| Estudante | Arthur Barbiratto Costa | Mecatrônica | Bolsista, estudante mentor do projeto |
+| Estudante | Augusto Germano Ramos Meyer | Mecatrônica | Voluntário, estudante mentor do projeto |
+| Estudante | Gabriel Antonio do Nascimento Reberti  | Mecatrônica | Desenvolvedor |
+| Estudante | Ricardo da Silva Facciulo  | Mecatrônica | Desenvolvedor |
+| Estudante | Gustavo Cardoso da Silva | Mecatrônica | Desenvolvedor |
+| Servidor | Eduardo Augusto Castelli Astrath | Docente E.B.T.T. – Núcleo da Base Nacional Comum/Física | Orientador/Demandante |
+| Servidor | Daniela Eloise Flôr  | Docente E.B.T.T. – Informação e Comunicação/Informática | Coordenadora |
 
 
 ## Instituição
