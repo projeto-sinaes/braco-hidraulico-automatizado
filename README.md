@@ -26,7 +26,7 @@ Para alcançar esses objetivos, o projeto prevê o desenvolvimento do firmware n
 
 ## Resultados esperados
 
-Espera-se desenvolver um protótipo funcional de um Braço Hidráulico Automatizado, construído com peças modulares em impressão 3D e corte CNC, integrado a um microcontrolador ESP32 com mini bombas d'água acionadas por pontes H e seringas operando como atuadores hidráulicos. Esse dispositivo favorecerá a aprendizagem ao materializar as leis da hidrostática e da hidrodinâmica em movimento físico real, permitindo que os estudantes visualizem a conversão de pressão e vazão em trabalho mecânico, consolidando a transição de conceitos abstratos de fluidos para dados empíricos tangíveis de forma multissensorial e intuitiva. Além disso, após sua validação e apresentação pública na **IX IFTECH**, o projeto possui alto potencial de replicação e compartilhamento, pois todo o código-fonte, esquemáticos eletrônicos e arquivos de modelagem digital serão disponibilizados de forma *open-source*, funcionando como um kit didático de baixo custo que pode ser facilmente adaptado, expandido ou reproduzido por outros laboratórios de ensino e estudantes.
+Espera-se desenvolver um protótipo funcional de um Braço Hidráulico Automatizado, construído com peças modulares em impressão 3D e corte CNC, integrado a um microcontrolador ESP32 com mini bombas d'água acionadas por pontes H e seringas operando como atuadores hidráulicos. Esse dispositivo favorecerá a aprendizagem ao materializar as leis da hidrostática e da hidrodinâmica em movimento físico real, permitindo que os estudantes visualizem a conversão de pressão e vazão em trabalho mecânico, consolidando a transição de conceitos abstratos de fluidos para dados empíricos tangíveis de forma multissensorial e intuitiva. Além disso, após sua validação e apresentação pública na **XIV IFTECH**, o projeto possui alto potencial de replicação e compartilhamento, pois todo o código-fonte, esquemáticos eletrônicos e arquivos de modelagem digital serão disponibilizados de forma *open-source*, funcionando como um kit didático de baixo custo que pode ser facilmente adaptado, expandido ou reproduzido por outros laboratórios de ensino e estudantes.
 
 ## Fundamentação e integração de conhecimentos
 
@@ -140,7 +140,7 @@ A adoção desse percurso comum busca:
 | Código-fonte | Código de controle das bombas a partir dos comandos | [`codigos/`](codigos/) | Em elaboração |
 | Modelo 3D | modelos de encaixes | [`modelos-3d/`](modelos-3d/) | Em elaboração |
 | Imagens | Fotos do projeto funcionando | [`imagens/`](imagens/) | Previsto |
-| Resultados | Exposição no IX IFTECH | [`resultados/`](resultados/) | Previsto |
+| Resultados | Exposição no XIV IFTECH | [`resultados/`](resultados/) | Previsto |
 
 > [!NOTE]
 > **Possibilidades de replicação:** Ao término do projeto todos os materiais, modelos e códigos serão disponibilizados gratuitamente para replicação mediante a devida creditação, sem necessidade de licença ou autorização.
